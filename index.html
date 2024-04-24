@@ -1,31 +1,75 @@
 <!DOCTYPE html>
-<html lang = "en" >
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wounded Warriors-Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Papyrus&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/styles.css">
+  <style>
+    /* Add custom styles for the logo */
+    header .container h1 img {
+      width: 130px; /* Set the width to your desired size */
+      height: auto; /* Maintain aspect ratio */
+    }
 
+    /* Position the header over the banner image */
+    header {
+      position: fixed;
+      z-index: 1; /* Ensure the header appears above the banner */
+    }
 
-	<head>
-		<title>Wounded Warriors</title>
-		<meta charset="utf=8">
-		<link rel="stylesheet" src="CSS/style.css">
-	</head>
-	<body>
+    .banner {
+      position: relative;
+      z-index: 0; /* Lower z-index to place it below the header */
+    }
+      
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1><img src="images/woundedlogo.png" alt="Wounded Warriors Logo"></h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pages/notes.html">Notes</a></li>
+          <li><a href="pages/about.html">About</a></li>
+          <li><a href="pages/contact.html">Contact</a></li>
+          <li class="cart-icon"><a href="cart.html">Cart <span class="cart-count">0</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-		<div id="container">
-			<header>TEST</header>
-			<!--Top of the page containing navigation bars and the websites icons-->
-			
-		</div>
+  <main>
+    <section class="banner">
+      <div class="container">
+        <div class="image">
+          <a href="notes.html">
+            <img src="images/home.jpg" alt="Banner Image">
+            <div class="overlay">
+              <button class="btn">Shop Now</button>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
 
-		<main>
+    <!-- Add more content below -->
+    <section id="shop-now">
+      <div class="container">
+        <!-- Add your shop now content here -->
+      </div>
+    </section>
+  </main>
 
-			<div id="body">
-				<p>INSERT TEXT HERE</p>
-
-			</div>
-		</main>
-
-
-
-
-
-	</body>
+  <footer>
+    <div class="container">
+      <p>&copy; Wounded Warriors Note Sending</p>
+    </div>
+  </footer>
+</body>
+<script src = "scripts/script.js"></script>
 </html>
+

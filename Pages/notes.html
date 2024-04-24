@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SneakerBratz - Shop All</title>
+  <link href="https://fonts.googleapis.com/css2?family=Papyrus&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Wounded Warrior</h1>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="notes.html">Notes</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="cart-icon"><a href="cart.html">Cart <span class="cart-count">0</span></a></li>
+        </ul>
+      </nav>
+    </div>
+    <button class="filter-button" onclick="toggleFilterMenu()">Card Type</button>
+    <div class="filter-menu" id="filterMenu">
+      <label><input type="checkbox"> Hood</label>
+      <label><input type="checkbox"> tee</label>
+      <label><input type="checkbox"> pants</label>
+      <label><input type="checkbox"> shoes</label>
+      <label><input type="checkbox"> Accessories</label><br>
+    
+    </div>
+   
+        
+  </header>  
+
+ <div class="products">
+    <div class="product">
+        <a href="product1.html">
+      <img src="../images/birthday.jpeg" alt="product 1">
+        </a>
+      <h3>Happy Birthday Card<br>floral</h3>
+      
+    </div>
+
+    <div class="product">
+        <a href="product2.html">
+      <img src="../images/cantwait.jpg" alt="Product 2">
+            </a>
+      <h3>Miss You Card<br>Can't Wait to See You</h3>
+      
+    </div>
+
+     <div class="product">
+         <a href="product3.html">
+      <img src="../images/getwellsoon.jpg" alt="Product 3">
+         </a>
+      <h3>Get Well Soon Card<br>Floral</h3>
+      
+    </div>
+      
+       <div class="product">
+           <a href="product4.html">
+      <img src="../images/missyouvan.png" alt="Product 4">
+           </a>
+      <h3>Miss You Card<br>Can't Wait to See You Van</h3>
+      
+    </div>
+  </div>
+    
+    <div class="products">
+    <div class="product">
+        <a href="product5.html">
+      <img src="slack/chrome4.png" alt="product 5">
+        </a>
+      <h3>Chrome Hearts x Off-White<br>2018 Hoodie</h3>
+      <p>$1170.00</p>
+    </div>
+
+  
+  
+
+  <footer>
+    <p>&copy; Wounded Warriors Note Sending</p>
+  </footer>
+  <script src="../Scripts/script.js"></script>
+  <script>
+    function toggleFilterMenu() {
+      var filterMenu = document.getElementById("filterMenu");
+      filterMenu.style.display = (filterMenu.style.display === "block") ? "none" : "block";
+    }
+    </script>
+    <script src="../Scripts/script.js"></script>
+  <script>
+    function toggleFilterMenu2() {
+      var filterMenu2 = document.getElementById("filterMenu2");
+      filterMenu2.style.display = (filterMenu2.style.display === "block") ? "none" : "block";
+    }
+    </script>
+    
+</body>
+</html>
