@@ -3,56 +3,97 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SneakerBratz-Contact Us</title>
+  <title>Wounded Warriors Notes-Home</title>
   <link href="https://fonts.googleapis.com/css2?family=Papyrus&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../CSS/styles.css">
+  <style>
+    /* Add custom styles for the logo */
+    header .container-h h1 img {
+      width: 130px; /* Set the width to your desired size */
+      height: auto; /* Maintain aspect ratio */
+      align-content: flex-start;
+    }
+
+    /* Position the header over the banner image */
+    header {
+      position: fixed;
+      z-index: 1; /* Ensure the header appears above the banner */
+      background-color: black;
+    }
+
+    .banner {
+      position: relative;
+      z-index: 0; /* Lower z-index to place it below the header */
+    }
+
+    /* Style for the image templates */
+    .image-template {
+      margin-top: 20px; /* Add some margin to separate the images */
+      text-align: center; /* Center the image and caption */
+    }
+
+    .image-template img {
+      width: 100%; /* Set the image width to fill the container */
+      height: auto; /* Maintain aspect ratio */
+    }
+
+    .image-template p {
+      margin-top: 10px; /* Add margin to the top of the caption */
+    }
+
+  </style>
 </head>
 <body>
   <header>
-    <div class="container">
-      <h1>Wounded Warriors</h1>
+    <div class="container-h">
+      <h1><a href="../index.html"><img src="images/woundedlogo.png" alt="Wounded Warriors Logo"></a></h1>
       <nav>
         <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="shopall.html">Shop all</a></li>
+         <li><a href="../index.html">Home</a></li>
+          <li><a href="shopall.html">Notes</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li class="cart-icon"><a href="cart.html">Cart <span class="cart-count">0</span></a></li>
+          
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
-    <div class="schedule">
+       <div class="schedule">
       <section id="scheduling">
-        <h2>Contact Us</h2>
-        <p>Thank you for visiting Wounded Warrior! We value your feedback and inquiries. Please use the following methods to contact us for any of your questions or needs.</p>
-        <h3>Contact Form</h3>
-        <form action="#" method="post">
-          <label for="name">Name:</label><br>
-          <input type="text" id="name" name="name"><br>
-          <label for="email">Email:</label><br>
-          <input type="email" id="email" name="email"><br>
-          <label for="subject">Subject:</label><br>
-          <input type="text" id="subject" name="subject"><br>
-          <label for="message">Message:</label><br>
-          <textarea id="message" name="message"></textarea><br>
-          <button type="submit">Submit</button>
-        </form>
+        <h2>Shipping Details<br>and<br>Customer Service<br>...<br>....<br>.....<br>.....<br>.....<br>......<br>......<br>.....<br>.....<br>.....<br>....</h2>
         <div class="box">
-          <p>Email: <a href="mailto:contact@woundedwarrior.com">contact@woundedwarrior.com</a></p>
-          <p>Phone: (123) 456-7890</p>
-          <p>Fax: (123) 456-7891</p>
-        </div>
+        <p> sneakerbratz1738@gmail.com </p>
+    </div>
+        
       </section>
     </div>
+   
   </main>
 
   <footer>
-    <div class="container-f">
-      <p>&copy; Wounded Warriors Note Sending</p>
+    <div class="copyright">
+      <p>&copy; Copyright 2024 Wounded Warrior Notes</p>
+      <p><a href="mailto:woundedwarriors108@gmail.com">woundedwarriors108@gmail.com</a></p>
+    </div>
+    <div class="social">
+      <a href="https://www.facebook.com/profile.php?id=61558696027334" target="_blank"><img src="images/facebook-logo.png" alt="Facebook logo"></a>
+      <a href="https://twitter.com/woundednotes" target="_blank"><img src="../images/twitter-logo.png" alt="Twitter logo"></a>
     </div>
   </footer>
+	<script src="../scripts/script.js"></script>
+    
+    <style>
+        .container-f{
+            margin-bottom: 0%;
+        }
+        .header {
+      position: fixed;
+      z-index: 1; /* Ensure the header appears above the banner */
+      background-color: black;
+    }
+    </style>
+    
 </body>
 </html>
