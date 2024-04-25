@@ -310,7 +310,41 @@ header, footer {
     margin-top: 100px;
 }
 
+/*typewriter effects*/
+.values h2{ 
+  
+  position: fixed;
+  left: 50%;
+  top: center;
+  text-decoration: none;
+  transform: translate(-50%,-15%);
+  margin: 10;
+  padding: 0;
+  font-family: papyrus;
+  font-weight: 100;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid transparent; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .10em; /* Adjust as needed */
+  
 
+
+    	
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 35% }/*og 35*/
+
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: transparent }
+}
+
+.values h2 *  {color: black; text-decoration: none;} /*changes color of the heading*/
 
   
 
