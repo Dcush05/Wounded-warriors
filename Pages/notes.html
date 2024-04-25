@@ -3,31 +3,70 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SneakerBratz - Shop All</title>
+  <title>Wounded Warriors Notes-Home</title>
   <link href="https://fonts.googleapis.com/css2?family=Papyrus&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../CSS/styles.css">
+  <style>
+    /* Add custom styles for the logo */
+    header .container-h h1 img {
+      width: 130px; /* Set the width to your desired size */
+      height: auto; /* Maintain aspect ratio */
+      align-content: flex-start;
+    }
+
+    /* Position the header over the banner image */
+    header {
+      position: fixed;
+      z-index: 1; /* Ensure the header appears above the banner */
+      background-color: black;
+    }
+
+    .banner {
+      position: relative;
+      z-index: 0; /* Lower z-index to place it below the header */
+    }
+
+    /* Style for the image templates */
+    .image-template {
+      margin-top: 20px; /* Add some margin to separate the images */
+      text-align: center; /* Center the image and caption */
+    }
+
+    .image-template img {
+      width: 100%; /* Set the image width to fill the container */
+      height: auto; /* Maintain aspect ratio */
+    }
+
+    .image-template p {
+      margin-top: 10px; /* Add margin to the top of the caption */
+    }
+      .products{
+          margin-top: 5%;
+      }
+
+  </style>
 </head>
 <body>
   <header>
-    <div class="container">
-      <h1>Wounded Warrior</h1>
+    <div class="container-h">
+      <h1><a href="index.html"><img src="../images/woundedlogo.png" alt="Wounded Warriors Logo"></a></h1>
       <nav>
         <ul>
           <li><a href="../index.html">Home</a></li>
           <li><a href="notes.html">Notes</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li class="cart-icon"><a href="cart.html">Cart <span class="cart-count">0</span></a></li>
+          
         </ul>
       </nav>
     </div>
     <button class="filter-button" onclick="toggleFilterMenu()">Card Type</button>
     <div class="filter-menu" id="filterMenu">
-      <label><input type="checkbox"> Hood</label>
-      <label><input type="checkbox"> tee</label>
-      <label><input type="checkbox"> pants</label>
-      <label><input type="checkbox"> shoes</label>
-      <label><input type="checkbox"> Accessories</label><br>
+      <label><input type="checkbox"> Happy Birthday</label>
+      <label><input type="checkbox"> Miss You</label>
+      <label><input type="checkbox"> Get Well Soon</label>
+      <label><input type="checkbox"> See You Soon</label>
+      <label><input type="checkbox"> Congratulations</label><br>
     
     </div>
    
@@ -81,22 +120,44 @@
   
 
   <footer>
-    <p>&copy; Wounded Warriors Note Sending</p>
+    <div class="copyright">
+      <p>&copy; Copyright 2024 Wounded Warrior Notes</p>
+      <p><a href="mailto:woundedwarriors108@gmail.com">woundedwarriors108@gmail.com</a></p>
+    </div>
+    <div class="social">
+      <a href="https://www.facebook.com/profile.php?id=61558696027334" target="_blank"><img src="../images/facebook-logo.png" alt="Facebook logo"></a>
+      <a href="https://twitter.com/woundednotes" target="_blank"><img src="../images/twitter-logo.png" alt="Twitter logo"></a>
+    </div>
   </footer>
-  <script src="../Scripts/script.js"></script>
+	<script src="../scripts/script.js"></script>
+  <script src="script.js"></script>
   <script>
     function toggleFilterMenu() {
       var filterMenu = document.getElementById("filterMenu");
       filterMenu.style.display = (filterMenu.style.display === "block") ? "none" : "block";
     }
     </script>
-    <script src="../Scripts/script.js"></script>
+    <script src="script.js"></script>
   <script>
     function toggleFilterMenu2() {
       var filterMenu2 = document.getElementById("filterMenu2");
       filterMenu2.style.display = (filterMenu2.style.display === "block") ? "none" : "block";
     }
+      
+    
     </script>
+        <style>
+            .container-h{
+                position: center;
+            }
+            .header {
+      position: fixed;
+      z-index: 1; /* Ensure the header appears above the banner */
+      background-color: black;
+    }
+            
+        </style>
     
 </body>
 </html>
+
