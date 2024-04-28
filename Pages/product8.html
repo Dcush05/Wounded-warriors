@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wounded Warriors Notes-Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Papyrus&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/styles.css">
+
+  <style>
+    
+    header .container-h h1 img {
+      width: 130px;
+      height: auto;
+    }
+
+    header {
+      position: fixed;
+      z-index: 1;
+      background-color: black;
+      width: 100%;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    .product-page {
+      display: flex;
+      justify-content: center;
+      align-items: lex-start;
+      padding-top: 190px; 
+       
+    }
+
+    .product-images {
+      margin-right: 0px;
+    }
+
+    .product-images img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .product-details {
+      max-width: 400px; 
+        margin-right: 0px;
+    }
+
+    
+    .user-input {
+      width: 50%;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-left:25%;
+    }
+
+    .user-input input[type="text"],
+    .user-input textarea {
+      width: calc(100% - 10px);
+      margin-bottom: 10px;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .user-input button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    #sentMessage {
+      margin-top: 10px;
+      color: green;
+    }
+
+    footer {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    footer .social {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container-h">
+      <h1><a href="../index.html"><img src="../images/woundedlogo.png" alt="Wounded Warriors Logo"></a></h1>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="notes.html">Notes</a></li>
+          <li><a href="about.html">About</a></li>
+	  <li><a href="stories.html">Stories</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="product-page">
+    <div class="product-images">
+      
+      <a href="../images/lovemiss.png" data-lightbox="product-images" data-title="B-Day Card">
+        <img src="../images/lovemiss.png" alt="Product Image">
+      </a>
+
+      
+      <a href="../images/backcard.png" data-lightbox="product-images" data-title="Front View"><img src="../images/backcard.png" alt="Thumbnail 1"></a>
+      <a href="../images/new_design.png" data-lightbox="product-images" data-title="Thumbnail 2"><img src="../images/new_design.png" alt="Thumbnail 2"></a>
+    </div>
+
+    <div class="product-details">
+      <h2>Miss You Love You Card</h2>
+      <p>
+        Russian Love Paper<br>
+        75% Authentic<br>
+        Hand-Inked Embroidery
+      </p>
+
+      <h3>Measurements</h3>
+      <table>
+        <tr>
+          <th>Dimensions</th>
+          <td>8.5 x 11 (in)</td>
+        </tr>
+        <tr>
+          <th>Color</th>
+          <td>White</td>
+        </tr>
+        <tr>
+          <th>Quality</th>
+          <td>Very High</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="user-input">
+    <input type="text" id="senderName" placeholder="Your First and Last Name">
+    <input type="text" id="receiverName" placeholder="Recipient's Name">
+    <input type="text" id="recipientAddress" placeholder="Recipient's Address">
+    <textarea id="message" placeholder="Your Message"></textarea>
+    <button onclick="sendLetter()">Send Letter</button>
+    <p id="sentMessage" style="display: none;">Letter sent</p>
+  </div>
+
+  <footer>
+    <div class="copyright">
+      <p>&copy; Copyright 2024 Wounded Warrior Notes</p>
+      <p><a href="mailto:woundedwarriors108@gmail.com">woundedwarriors108@gmail.com</a></p>
+    </div>
+    <div class="social">
+	<a href="https://www.facebook.com/profile.php?id=61558696027334" target="_blank"><button class='fbtn1'><img src="../images/facebook-logo.png" alt="Facebook logo"></button></a>
+	<a href="https://twitter.com/woundednotes" target="_blank"><button class='fbtn2'><img src="../images/twitter-logo.png" alt="Twitter logo"></button></a> 
+      
+    </div>
+  </footer>
+
+  <script src="../scripts/script.js"></script>
+  <script>
+    function sendLetter() {
+      // Simulate sending letter
+      document.getElementById("sentMessage").style.display = "block";
+    }
+  </script>
+</body>
+</html>
