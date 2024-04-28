@@ -135,6 +135,12 @@ nav ul li a {
   color: #fff;
   text-decoration: none;
 }
+nav li a:hover {
+	color: #000;
+	background-color: #fff;
+	transform: scale(1.3)
+
+}
 
 main {
   padding: 20px 0;
@@ -210,6 +216,7 @@ header, footer {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+
 }
 
 .product-page {
@@ -234,7 +241,7 @@ header, footer {
 
 .product-page .product-details {
   max-width: 400px; /* Adjust as needed */
-    text-align:
+   /* text-align:*/
 }
 
 .product-page .product-details table {
@@ -310,14 +317,41 @@ header, footer {
     margin-top: 100px;
 }
 
+/*footer buttons*/
+.fbtn1{
+	border: none;
+	background-color:transparent;
+	 transition: transform 0.3s;
+
+}
+.fbtn1:hover{
+	transform: translateY(-10px);
+	color: var(--clr-light);
+
+
+
+}
+.fbtn2{
+	border: none;
+	background-color:transparent;
+	 transition: transform 0.3s;
+
+}
+.fbtn2:hover{
+	transform: translateY(-10px);
+	color: var(--clr-light);
+}
+
+
+
 /*typewriter effects*/
-.values h2{ 
+.values a{ 
   
-  position: fixed;
-  left: 50%;
+  position:relative; /*fix positioning code and also fix the colors of the nav bar in contacts and stories*/ 
+  left: 45%;
   top: center;
   text-decoration: none;
-  transform: translate(-50%,-15%);
+  transform: translate(-50%,-50%);
   margin: 10;
   padding: 0;
   font-family: papyrus;
@@ -332,6 +366,7 @@ header, footer {
 
     	
 }
+
 @keyframes typing {
   from { width: 0 }
   to { width: 35% }/*og 35*/
